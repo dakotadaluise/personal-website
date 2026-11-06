@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Volleyball | Dakota Daluise</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <a href="./index.html" id="name-container">Dakota Daluise</a>
+        <div id="pages-container">
+            <a class="pages-btn" href="./index.html">About Me</a>
+            <a class="pages-btn" href="./volleyball.html">Volleyball</a>
+            <a class="pages-btn" href="./index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="body-container">
+        <h2>Volleyball (no longer an underappreciated sport!)</h2>
+
+        <div class="intro">
+
+            <div class="intro-text">
+                <p>
+                    I started playing volleyball in middle school and have been in love with it ever
+                    since. It is a team sport where you truly do need multiple players to make it
+                    work. In basketball, one player can run up and down the court and score every
+                    point by themselves without needing anyone else to touch the ball. In volleyball,
+                    however, you can't pass or set yourself, so you need the social aspect of the
+                    team in order to be successful.
+                </p>
+                <p>
+                    The last ten years have been great to watch as both a player and a fan. NCAA
+                    Division I women's volleyball went from a sport with respectable followings to
+                    one that literally sells out football stadiums (search up Nebraska volleyball's
+                    historic match). The national championship broadcast keeps finding new audiences,
+                    and professional leagues in the United States &mdash; such as the LOVB and MLV
+                    &mdash; are expanding and giving college stars a domestic place to keep competing
+                    instead of having them sign overseas by default.
+                </p>
+                <p>
+                    The chart below uses D3 to show how average attendance at NCAA Division I women's
+                    volleyball matches has grown each season. Note that the data in
+                    <code>data/volleyball-popularity.csv</code> is made up for this assignment, but it
+                    is reflective of the real trend and could be replaced by real NCAA data.
+                </p>
+            </div>
+
+            <!-- Image for volleyball page -->
+            <div class="intro-image">
+                <img src="images/volleyball.png" width="220px" alt="Dakota playing volleyball">
+            </div>
+
+        </div>
+
+        <!-- Unordered list -->
+        <h3>What I watch for in a match</h3>
+        <ul>
+            <li><b>Rally length</b> &ndash; if the teams are evenly matched</li>
+            <li><b>Defense quality</b> &ndash; the number of digs and scramble plays</li>
+            <li><b>Setter decision-making</b> &ndash; how they move the ball around</li>
+            <li><b>Offense variety</b> &ndash; how many full swings vs. tips and rolls</li>
+            <li><b>Serve pressure</b> &ndash; the number of aces vs. missed serves</li>
+        </ul>
+
+        <!-- D3 visualization -->
+        <div class="chart-box">
+            <h3>Average attendance at NCAA Division I women's volleyball matches</h3>
+            <p>Hover over a bar to see the attendance for that season.</p>
+
+            <!-- The bar chart gets drawn inside this div by chart.js -->
+            <div id="chart"></div>
+        </div>
+
+        <!-- Ordered list -->
+        <h3>Where I think it goes next</h3>
+        <ol>
+            <li>Domestic pro leagues keep expanding, so the best players stay visible to US audiences year-round.</li>
+            <li>Broadcast production keeps improving, with better camera angles, video quality, and in-match statistics.</li>
+            <li>Club participation keeps growing, which shows up later as a wider college talent pool.</li>
+        </ol>
+
+        <p>
+            Want to discuss who's taking the trophy this year?
+            <a href="./index.html#contact">Get in touch</a>.
+        </p>
+
+    </div>
+
+    <div id="footer">
+        <div>Made for DS4200 at Northeastern University, Fall 2026</div>
+    </div>
+
+    <!-- D3 and my chart code go at the bottom so the page loads first -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="chart.js"></script>
+
+</body>
+</html>
